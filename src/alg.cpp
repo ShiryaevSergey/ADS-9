@@ -8,6 +8,7 @@
 BST<std::string> makeTree(const char* filename) {
   BST<std::string> bst;
   std::ifstream file(filename);
+  std::string s = "";
   if (!file.is_open()) {
     throw std::string("Can't open file!");
   }
